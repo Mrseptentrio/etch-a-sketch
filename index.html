@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Etch A Sketch</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+</head>
+
+<body>
+  <h1>Welcome to Etch a Sketch</h1>
+  <div class="container"></div>
+
+
+  <div class="optionList">
+    <button id="eight" value="8" onclick='drawPad(this.value)'>8 bits</button>
+    <button id="ten" value="10" onclick='drawPad(this.value)'>10 bits</button>
+    <button id="sixteen" value="16" onclick='drawPad(this.value)'>16 bits</button>
+    <button id="thirtyTwo" value="32" onclick='drawPad(this.value)'>32 bits</button>
+    <button id="sixtyFour" value="64" onclick='drawPad(this.value)'>64 bits</button>
+  </div>
+  <div class="colors">
+    <button class="blackButton" onclick="changeColor('black')">Black</button>
+    <button class="rainbowColor" onclick="changeColor('rainbow')">Rainbow</button>
+    <button class="white" onclick="changeColor('white')">White</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
